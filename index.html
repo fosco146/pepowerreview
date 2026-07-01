@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,143 +9,169 @@
     <meta name="description" content="Independent, P.E.-stamped third-party reviews and compliance audits for ETAP, SKM PowerTools, and EasyPower arc flash and overcurrent coordination models.">
     <style>
         :root { 
-            --bg: #0f172a; 
-            --surface: #1e293b; 
-            --text: #f8fafc; 
-            --muted: #94a3b8; 
+            --bg: #0b0f19; 
+            --surface: #111827; 
+            --text: #f9fafb; 
+            --muted: #9ca3af; 
             --accent: #38bdf8; 
-            --border: #334155; 
+            --border: #1f2937; 
+            --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
         }
+        
+        * { box-sizing: border-box; }
+
         body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
             background-color: var(--bg); 
             color: var(--text); 
-            line-height: 1.6; 
+            line-height: 1.5; 
             margin: 0; 
-            padding: 2rem 1rem; 
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
         }
+
         .container { 
-            max-width: 800px; 
+            max-width: 760px; 
             margin: 0 auto; 
+            padding: 2rem 1.25rem;
         }
+
         header { 
-            margin-bottom: 3rem; 
-            border-bottom: 2px solid var(--border); 
-            padding-bottom: 1.5rem; 
+            margin-bottom: 4rem; 
+            border-bottom: 1px solid var(--border); 
+            padding-bottom: 2rem; 
             display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
+            flex-direction: column;
+            gap: 1.5rem;
         }
+
+        /* Standard Top Navbar Layout */
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
         h1 { 
-            font-size: 2.25rem; 
+            font-size: 1.75rem; 
+            font-weight: 700;
+            letter-spacing: -0.02em;
             margin: 0; 
         }
+
         nav {
             display: flex;
-            align-items: center;
+            gap: 1.25rem;
         }
+
         nav a { 
-            color: var(--text); 
+            color: var(--muted); 
             text-decoration: none; 
-            margin-left: 1.5rem; 
-            font-weight: 500; 
-            font-size: 0.95rem; 
+            font-size: 0.9rem; 
+            font-weight: 500;
             white-space: nowrap;
+            transition: color 0.15s ease;
         }
-        nav a:hover, nav a.active { 
+
+        nav a:hover { color: var(--text); }
+        nav a.active { 
             color: var(--accent); 
+            font-weight: 600;
         }
+
         .subtitle { 
-            color: var(--accent); 
-            font-size: 1.1rem; 
-            font-weight: 600; 
+            font-family: var(--mono);
+            color: var(--muted); 
+            font-size: 0.85rem; 
             text-transform: uppercase; 
-            margin-top: 0.25rem; 
+            letter-spacing: 0.05em;
         }
+
+        /* Clean Content Blocks */
         section { 
-            background: var(--surface); 
-            border: 1px solid var(--border); 
-            border-radius: 8px; 
-            padding: 1.75rem; 
-            margin-bottom: 2rem; 
+            margin-bottom: 3.5rem; 
         }
+
         h2 { 
-            font-size: 1.35rem; 
-            color: var(--accent); 
+            font-size: 1.2rem; 
+            font-weight: 600;
+            color: var(--text); 
             margin-top: 0; 
             margin-bottom: 1rem; 
-            border-bottom: 1px solid var(--border); 
-            padding-bottom: 0.5rem; 
+            letter-spacing: -0.01em;
         }
+
         p { 
-            margin: 0 0 1rem 0; 
+            margin: 0 0 1.25rem 0; 
+            color: #d1d5db;
+            font-size: 0.975rem;
         }
+
+        /* Subtle technical highlight */
+        .tech-label {
+            font-family: var(--mono);
+            font-size: 0.75rem;
+            color: var(--accent);
+            background: rgba(56, 189, 248, 0.1);
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
         footer { 
-            text-align: center; 
-            margin-top: 4rem; 
+            text-align: left; 
+            margin-top: 6rem; 
+            border-top: 1px solid var(--border);
+            padding-top: 1.5rem;
             color: var(--muted); 
-            font-size: 0.875rem; 
+            font-family: var(--mono);
+            font-size: 0.75rem; 
+        }
+
+        /* Responsive adaptation for mobile screens */
+        @media (max-width: 480px) {
+            header { margin-bottom: 2.5rem; padding-bottom: 1.5rem; }
+            .header-top { flex-direction: column; gap: 1rem; align-items: flex-start; }
+            nav { gap: 1rem; width: 100%; border-top: 1px solid var(--border); padding-top: 1rem; }
+            nav a { font-size: 0.85rem; }
+            h1 { font-size: 1.5rem; }
         }
     </style>
 </head>
 <body>
 <div class="container">
     <header>
-        <div>
+        <div class="header-top">
             <h1>PE Power Review</h1>
-            <div class="subtitle">Independent Engineering Verification</div>
+            <nav>
+                <a href="/" class="active">Home</a>
+                <a href="/process/">Our Process</a>
+                <a href="/studies/">Full Studies</a>
+            </nav>
         </div>
-        <nav>
-            <a href="/" class="active">Home</a>
-            <a href="/process/">Our Process</a>
-            <a href="/studies/">Full Studies</a>
-        </nav>
+        <div class="subtitle">Independent Engineering Verification</div>
     </header>
+
     <main>
         <section>
+            <div class="tech-label">COMPLIANCE REVIEW</div>
             <h2>Who can perform an independent 3rd-party peer review on an arc flash study?</h2>
             <p>Independent third-party peer reviews on arc flash and power system studies must be performed by a licensed Professional Engineer (P.E.) who is entirely disconnected from the original design or installation team. PE Power Review provides these independent compliance audits, delivering uncompromised engineering verification to satisfy municipal building officials, insurance underwriters, and facility owner mandates.</p>
         </section>
+
         <section>
+            <div class="tech-label">RISK MITIGATION</div>
             <h2>Why is an independent engineering review required for power system models?</h2>
             <p>An independent engineering review isolates the project owner and prime contractor from engineering liability while verifying system safety parameters. Municipal permitting authorities, utility compliance boards, and mission-critical project specifications regularly mandate a third-party P.E. audit to ensure that design deliverables match physical site constraints before electrical infrastructure is energized.</p>
         </section>
-    </main> 
+    </main>
+
+    <footer>
+        <div>&copy; 2026 PE Power Review. Ohio & Kentucky Licensed P.E. Services.</div>
+    </footer>
 </div>
 </body>
-<section id="contact">
-    <h2>Request a Third-Party Model Audit Quote</h2>
-    <p>Submit your project parameters below. A licensed Professional Engineer (P.E.) will review your scope.</p>
-    
-    <!-- Replace the URL below with your actual Formspree/Getform endpoint -->
-    <form action="https://formspree.io/f/mbdvabpd" method="POST" style="display: flex; flex-direction: column; gap: 1rem; max-width: 500px; margin-top: 1.5rem;">
-        <label style="display: flex; flex-direction: column; gap: 0.25rem;">
-            <span>Full Name & Credentials</span>
-            <input type="text" name="name" required style="padding: 0.5rem; background: var(--bg); border: 1px solid var(--border); color: var(--text); border-radius: 4px;">
-        </label>
-        
-        <label style="display: flex; flex-direction: column; gap: 0.25rem;">
-            <span>Corporate Email Address</span>
-            <input type="email" name="email" required style="padding: 0.5rem; background: var(--bg); border: 1px solid var(--border); color: var(--text); border-radius: 4px;">
-        </label>
-        
-        <label style="display: flex; flex-direction: column; gap: 0.25rem;">
-            <span>Simulation Software Platform</span>
-            <select name="platform" style="padding: 0.5rem; background: var(--bg); border: 1px solid var(--border); color: var(--text); border-radius: 4px;">
-                <option value="skm">SKM PowerTools</option>
-                <option value="etap">ETAP</option>
-                <option value="easypower">EasyPower</option>
-                <option value="other">Other / Multiple</option>
-            </select>
-        </label>
-        
-        <label style="display: flex; flex-direction: column; gap: 0.25rem;">
-            <span>Project Scope / Estimated Bus Count</span>
-            <textarea name="message" rows="4" placeholder="e.g., Auditing an as-built SKM model for a 480V manufacturing facility expansion, approx. 150 buses..." required style="padding: 0.5rem; background: var(--bg); border: 1px solid var(--border); color: var(--text); border-radius: 4px; font-family: inherit;"></textarea>
-        </label>
-        
-        <button type="submit" style="padding: 0.75rem; background: var(--accent); color: var(--bg); border: none; border-radius: 4px; font-weight: bold; cursor: pointer; text-transform: uppercase;">Submit Request</button>
-    </form>
-</section>
 </html>
-
