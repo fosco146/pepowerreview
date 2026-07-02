@@ -33,21 +33,21 @@
 </head>
 <body class="bg-white text-brand-dark antialiased">
 
-    <!-- Full-Width Header -->
+    <!-- Responsive Header -->
     <header class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm w-full">
-        <div class="w-full px-6 md:px-12 h-24 flex items-center justify-between">
+        <div class="w-full px-6 md:px-12 h-16 md:h-24 flex items-center justify-between">
             <!-- Refined Tightened Logo Group -->
             <a href="#" class="flex flex-col justify-center select-none group">
-                <div class="flex items-center space-x-1 tracking-wider font-extrabold text-3xl text-brand-dark transition-colors duration-200">
+                <div class="flex items-center space-x-1 tracking-wider font-extrabold text-2xl md:text-3xl text-brand-dark transition-colors duration-200">
                     <span>F</span>
-                    <span class="relative flex items-center justify-center w-[36px] h-[36px] rounded-full border-[3px] border-brand-accent mx-0.5">
-                        <svg class="w-5 h-5 text-brand-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                    <span class="relative flex items-center justify-center w-[28px] h-[28px] md:w-[36px] md:h-[36px] rounded-full border-[2px] md:border-[3px] border-brand-accent mx-0.5">
+                        <svg class="w-3.5 h-3.5 md:w-5 md:h-5 text-brand-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 12c3-6 3 6 6 0s3-6 6 0 3 6 6 0" />
                         </svg>
                     </span>
                     <span>SCO</span>
                 </div>
-                <span class="text-[13px] tracking-[0.4em] uppercase text-emerald-800/40 font-black mt-1 transition-colors duration-200 group-hover:text-brand-hover">Engineering</span>
+                <span class="text-[10px] md:text-[13px] tracking-[0.4em] uppercase text-emerald-800/40 font-black mt-0.5 md:mt-1 transition-colors duration-200 group-hover:text-brand-hover">Engineering</span>
             </a>
             
             <nav class="hidden md:flex items-center space-x-10 text-sm font-semibold tracking-wide text-emerald-900/80">
@@ -60,21 +60,21 @@
         </div>
     </header>
 
-    <!-- Expanded True Viewport Hero Section -->
-    <section class="relative w-full bg-white min-h-[88vh] flex items-center border-b border-gray-100 py-20 lg:py-0">
+    <!-- Optimized Viewport Hero Section for Mobile & Desktop -->
+    <section class="relative w-full bg-white min-h-0 md:min-h-[88vh] flex items-center border-b border-gray-100 py-12 md:py-20 lg:py-0">
         <div class="w-full px-6 md:px-12 text-center">
-            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-6xl mx-auto leading-[1.12] text-brand-dark">
+            <h1 class="text-3xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-6xl mx-auto leading-[1.15] md:leading-[1.12] text-brand-dark">
                 Power Systems Engineering <br class="hidden sm:inline">With Energized Expertise.
             </h1>
-            <p class="mt-10 text-lg sm:text-xl lg:text-2xl text-emerald-900/70 max-w-4xl mx-auto leading-relaxed font-medium/80">
+            <p class="mt-6 md:mt-10 text-base sm:text-xl lg:text-2xl text-emerald-900/70 max-w-4xl mx-auto leading-relaxed font-medium/80">
                 Every calculation, model validation, and third-party compliance review is executed and verified directly by a licensed Professional Engineer.
             </p>
            
-            <div class="mt-16 flex flex-col sm:flex-row justify-center items-center gap-6">
-                <a href="#intake" class="w-full sm:w-auto bg-brand-accent hover:bg-brand-hover text-brand-dark font-extrabold text-sm uppercase tracking-wider px-12 py-5 rounded shadow-md hover:shadow-xl transition text-center">
+            <div class="mt-10 md:mt-16 flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6">
+                <a href="#intake" class="w-full sm:w-auto bg-brand-accent hover:bg-brand-hover text-brand-dark font-extrabold text-xs md:text-sm uppercase tracking-wider px-8 md:px-12 py-4 md:py-5 rounded shadow-md hover:shadow-xl transition text-center">
                     Request Technical Consultation
                 </a>
-                <a href="#capabilities" class="w-full sm:w-auto border-2 border-brand-dark hover:border-brand-accent hover:bg-brand-light text-brand-dark px-12 py-5 rounded font-bold text-sm uppercase tracking-wider transition text-center">
+                <a href="#capabilities" class="w-full sm:w-auto border-2 border-brand-dark hover:border-brand-accent hover:bg-brand-light text-brand-dark px-8 md:px-12 py-4 md:py-5 rounded font-bold text-xs md:text-sm uppercase tracking-wider transition text-center">
                     Explore Capabilities
                 </a>
             </div>
@@ -82,17 +82,17 @@
     </section>
 
     <!-- Expertise Section -->
-    <section id="capabilities" class="bg-brand-light py-32 border-b border-emerald-900/5 w-full">
+    <section id="capabilities" class="bg-brand-light py-20 md:py-32 border-b border-emerald-900/5 w-full">
         <div class="w-full px-6 md:px-12">
-            <div class="text-center mb-24">
+            <div class="text-center mb-16 md:mb-24">
                 <h2 class="text-xs uppercase tracking-[0.3em] text-brand-hover font-bold mb-3">Expertise</h2>
-                <p class="text-4xl font-extrabold tracking-tight text-brand-dark">Engineering Services</p>
+                <p class="text-3xl md:text-4xl font-extrabold tracking-tight text-brand-dark">Engineering Services</p>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-7xl mx-auto">
-                <div class="bg-white p-8 lg:p-12 rounded-xl border border-gray-200/80 shadow-sm hover:shadow-md transition">
-                    <h3 class="text-2xl font-bold text-brand-dark mb-4">Expert Third-Party Review & Auditing</h3>
-                    <p class="text-emerald-900/70 leading-relaxed mb-6">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start max-w-7xl mx-auto">
+                <div class="bg-white p-6 md:p-12 rounded-xl border border-gray-200/80 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl md:text-2xl font-bold text-brand-dark mb-4">Expert Third-Party Review & Auditing</h3>
+                    <p class="text-sm md:text-base text-emerald-900/70 leading-relaxed mb-6">
                         We possess the elite technical depth required to act as the ultimate engineering authority—vetting, validating, and auditing complex power system models to isolate critical discrepancies and eliminate blind spots.
                     </p>
                     <ul class="space-y-3 border-t border-gray-100 pt-6">
@@ -111,9 +111,9 @@
                     </ul>
                 </div>
 
-                <div class="bg-white p-8 lg:p-12 rounded-xl border border-gray-200/80 shadow-sm hover:shadow-md transition">
-                    <h3 class="text-2xl font-bold text-brand-dark mb-4">Advanced Modeling & Analysis</h3>
-                    <p class="text-emerald-900/70 leading-relaxed mb-6">
+                <div class="bg-white p-6 md:p-12 rounded-xl border border-gray-200/80 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl md:text-2xl font-bold text-brand-dark mb-4">Advanced Modeling & Analysis</h3>
+                    <p class="text-sm md:text-base text-emerald-900/70 leading-relaxed mb-6">
                         We model, analyze, and optimize high-consequence electrical infrastructure using an institutional standard of engineering rigor that actively protects personnel and secures system uptime.
                     </p>
                     <ul class="space-y-3 border-t border-gray-100 pt-6">
@@ -136,28 +136,28 @@
     </section>
 
     <!-- Why Us Section -->
-    <section id="trust" class="bg-white py-32 border-b border-gray-100 w-full">
+    <section id="trust" class="bg-white py-20 md:py-32 border-b border-gray-100 w-full">
         <div class="w-full px-6 md:px-12 max-w-7xl mx-auto">
-            <div class="mb-24">
-                <p class="text-4xl font-extrabold tracking-tight text-brand-dark">Why Businesses Partner with Fosco Engineering</p>
+            <div class="mb-16 md:mb-24">
+                <p class="text-3xl md:text-4xl font-extrabold tracking-tight text-brand-dark">Why Businesses Partner with Fosco Engineering</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-12">
-                <div class="space-y-4">
-                    <h4 class="text-xl font-bold text-brand-dark border-b border-emerald-100 pb-2">The Expert’s Expert</h4>
-                    <p class="text-sm text-emerald-900/70 leading-relaxed">
+            <div class="grid md:grid-cols-3 gap-10 md:grid-cols-3 gap-12">
+                <div class="space-y-3 md:space-y-4">
+                    <h4 class="text-lg md:text-xl font-bold text-brand-dark border-b border-emerald-100 pb-2">The Expert’s Expert</h4>
+                    <p class="text-xs md:text-sm text-emerald-900/70 leading-relaxed">
                         We don't just run standard software scripts; we audit them. Our rare technical depth allows us to perform meticulous peer reviews that catch underlying model gaps, protecting your facilities from catastrophic oversights.
                     </p>
                 </div>
-                <div class="space-y-4">
-                    <h4 class="text-xl font-bold text-brand-dark border-b border-emerald-100 pb-2">Direct Licensed P.E. Mastery</h4>
-                    <p class="text-sm text-emerald-900/70 leading-relaxed">
+                <div class="space-y-3 md:space-y-4">
+                    <h4 class="text-lg md:text-xl font-bold text-brand-dark border-b border-emerald-100 pb-2">Direct Licensed P.E. Mastery</h4>
+                    <p class="text-xs md:text-sm text-emerald-900/70 leading-relaxed">
                         High-powered power systems demand senior-level execution. Your analysis will never be handed down to uncredentialed junior technicians. Every single model, evaluation, and final seal is executed directly by a licensed Professional Engineer.
                     </p>
                 </div>
-                <div class="space-y-4">
-                    <h4 class="text-xl font-bold text-brand-dark border-b border-emerald-100 pb-2">Uncompromised System Safety</h4>
-                    <p class="text-sm text-emerald-900/70 leading-relaxed">
+                <div class="space-y-3 md:space-y-4">
+                    <h4 class="text-lg md:text-xl font-bold text-brand-dark border-b border-emerald-100 pb-2">Uncompromised System Safety</h4>
+                    <p class="text-xs md:text-sm text-emerald-900/70 leading-relaxed">
                         Our ultimate mission is to improve safety and operational reliability throughout the electrical industry. By matching severe engineering rigor with clear, executable deliverables, we ensure clients can move forward with absolute peace of mind.
                     </p>
                 </div>
@@ -166,12 +166,12 @@
     </section>
 
     <!-- Consultation Section -->
-    <section id="intake" class="bg-brand-light py-32 border-b border-emerald-900/5 w-full">
+    <section id="intake" class="bg-brand-light py-20 md:py-32 border-b border-emerald-900/5 w-full">
         <div class="max-w-4xl mx-auto px-6">
-            <div class="bg-white border border-gray-200 shadow-xl rounded-xl p-8 md:p-12">
-                <div class="text-center mb-10">
-                    <h3 class="text-2xl font-bold tracking-tight text-brand-dark mb-2">Request an Expert Consultation</h3>
-                    <p class="text-sm text-emerald-900/50">Securely submit your technical details to get started.</p>
+            <div class="bg-white border border-gray-200 shadow-xl rounded-xl p-6 md:p-12">
+                <div class="text-center mb-8 md:mb-10">
+                    <h3 class="text-xl md:text-2xl font-bold tracking-tight text-brand-dark mb-2">Request an Expert Consultation</h3>
+                    <p class="text-xs md:text-sm text-emerald-900/50">Securely submit your technical details to get started.</p>
                 </div>
 
                 <form action="#" method="POST" class="space-y-6">
@@ -197,18 +197,18 @@
 
                     <div>
                         <label class="block text-xs uppercase font-bold tracking-wider text-emerald-900/60 mb-2">Secure Technical File Drop</label>
-                        <div class="w-full border-2 border-dashed border-gray-200 bg-brand-light hover:bg-emerald-50/50 hover:border-brand-accent transition rounded-lg p-8 flex flex-col items-center justify-center cursor-pointer">
+                        <div class="w-full border-2 border-dashed border-gray-200 bg-brand-light hover:bg-emerald-50/50 hover:border-brand-accent transition rounded-lg p-6 md:p-8 flex flex-col items-center justify-center cursor-pointer">
                             <svg class="w-8 h-8 text-emerald-800/40 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                             </svg>
-                            <p class="text-xs font-bold text-emerald-900/70">Drag & drop or click to upload project files</p>
+                            <p class="text-xs font-bold text-emerald-900/70 text-center">Drag & drop or click to upload project files</p>
                             <p class="text-[10px] text-emerald-900/40 mt-1 font-medium">Accepts SKM, ETAP, or engineering PDFs</p>
                             <input type="file" class="hidden">
                         </div>
                     </div>
 
                     <div class="pt-4">
-                        <button type="submit" class="w-full bg-brand-accent hover:bg-brand-hover text-brand-dark font-extrabold text-sm uppercase tracking-wider py-4 rounded transition shadow-md hover:shadow-lg">
+                        <button type="submit" class="w-full bg-brand-accent hover:bg-brand-hover text-brand-dark font-extrabold text-xs md:text-sm uppercase tracking-wider py-4 rounded transition shadow-md hover:shadow-lg">
                             Submit Technical Request
                         </button>
                     </div>
@@ -217,13 +217,13 @@
         </div>
     </section>
 
-    <footer class="bg-brand-dark text-emerald-100/60 text-xs py-16 w-full">
+    <footer class="bg-brand-dark text-emerald-100/60 text-xs py-12 md:py-16 w-full">
         <div class="w-full px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-                <p class="font-extrabold text-white tracking-widest text-base mb-1">FOSCO ENGINEERING</p>
+            <div class="text-center md:text-left">
+                <p class="font-extrabold text-white tracking-widest text-sm md:text-base mb-1">FOSCO ENGINEERING</p>
                 <p>&copy; 2026 Fosco Engineering LLC. All rights reserved.</p>
             </div>
-            <div class="text-center md:text-right text-[11px] text-emerald-100/40 font-medium max-w-md">
+            <div class="text-center md:text-right text-[10px] md:text-[11px] text-emerald-100/40 font-medium max-w-md">
                 All technical deliverables are fully engineered, certified, and stamped directly by a licensed Professional Engineer.
             </div>
         </div>
