@@ -33,95 +33,101 @@
 </head>
 <body class="bg-white text-brand-dark antialiased">
 
-    <header class="sticky top-0 z-50 bg-white text-brand-dark border-b border-gray-100 shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="flex flex-col justify-center">
-                <div class="flex items-center space-x-1.5 tracking-wider font-bold text-2xl text-brand-dark">
+    <!-- Full-Width Header -->
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm w-full">
+        <div class="w-full px-6 md:px-12 h-24 flex items-center justify-between">
+            <!-- Refined Tightened Logo Group -->
+            <a href="#" class="flex flex-col justify-center select-none group">
+                <div class="flex items-center space-x-1 tracking-wider font-extrabold text-3xl text-brand-dark transition-colors duration-200">
                     <span>F</span>
-                    <span class="relative flex items-center justify-center w-7 h-7 rounded-full border-2 border-brand-accent mx-0.5">
-                        <svg class="w-4 h-4 text-brand-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <span class="relative flex items-center justify-center w-[36px] h-[36px] rounded-full border-[3px] border-brand-accent mx-0.5">
+                        <svg class="w-5 h-5 text-brand-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 12c3-6 3 6 6 0s3-6 6 0 3 6 6 0" />
                         </svg>
                     </span>
                     <span>SCO</span>
                 </div>
-                <span class="text-[12px] tracking-[0.38em] uppercase text-emerald-800/40 font-bold mt-0.5">Engineering</span>
+                <span class="text-[13px] tracking-[0.4em] uppercase text-emerald-800/40 font-black mt-1 transition-colors duration-200 group-hover:text-brand-hover">Engineering</span>
             </a>
             
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide text-emerald-900/80">
+            <nav class="hidden md:flex items-center space-x-10 text-sm font-semibold tracking-wide text-emerald-900/80">
                 <a href="#capabilities" class="hover:text-brand-accent transition">Expertise</a>
                 <a href="#trust" class="hover:text-brand-accent transition">Our Advantage</a>
-                <a href="#intake" class="bg-brand-accent hover:bg-brand-hover text-brand-dark px-5 py-2.5 rounded text-xs uppercase tracking-wider font-extrabold transition shadow-sm hover:shadow">
+                <a href="#intake" class="bg-brand-accent hover:bg-brand-hover text-brand-dark px-6 py-3 rounded text-xs uppercase tracking-wider font-extrabold transition shadow-sm hover:shadow">
                     Request Consultation
                 </a>
             </nav>
         </div>
     </header>
 
-    <!-- Clean, High-Impact Hero Block matching image_969dc2.png -->
-    <section class="relative bg-white text-brand-dark py-24 lg:py-32 overflow-hidden border-b border-gray-100">
-        <div class="relative max-w-7xl mx-auto px-6 text-center">
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight max-w-5xl mx-auto leading-tight text-brand-dark">
-                Power Systems Engineering <br>With Energized Expertise.
+    <!-- Expanded True Viewport Hero Section -->
+    <section class="relative w-full bg-white min-h-[88vh] flex items-center border-b border-gray-100 py-20 lg:py-0">
+        <div class="w-full px-6 md:px-12 text-center">
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-6xl mx-auto leading-[1.12] text-brand-dark">
+                Power Systems Engineering <br class="hidden sm:inline">With Energized Expertise.
             </h1>
+            <p class="mt-10 text-lg sm:text-xl lg:text-2xl text-emerald-900/70 max-w-4xl mx-auto leading-relaxed font-medium/80">
+                Every calculation, model validation, and third-party compliance review is executed and verified directly by a licensed Professional Engineer.
+            </p>
            
-            <div class="mt-12 flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="#intake" class="w-full sm:w-auto bg-brand-accent hover:bg-brand-hover text-brand-dark font-extrabold text-sm uppercase tracking-wider px-8 py-4 rounded shadow-md hover:shadow-lg transition text-center">
+            <div class="mt-16 flex flex-col sm:flex-row justify-center items-center gap-6">
+                <a href="#intake" class="w-full sm:w-auto bg-brand-accent hover:bg-brand-hover text-brand-dark font-extrabold text-sm uppercase tracking-wider px-12 py-5 rounded shadow-md hover:shadow-xl transition text-center">
                     Request Technical Consultation
                 </a>
-                <a href="#capabilities" class="w-full sm:w-auto border-2 border-brand-dark/10 hover:border-brand-dark hover:bg-brand-light text-brand-dark px-8 py-4 rounded font-bold text-sm uppercase tracking-wider transition text-center">
+                <a href="#capabilities" class="w-full sm:w-auto border-2 border-brand-dark hover:border-brand-accent hover:bg-brand-light text-brand-dark px-12 py-5 rounded font-bold text-sm uppercase tracking-wider transition text-center">
                     Explore Capabilities
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="capabilities" class="bg-brand-light py-24 border-b border-emerald-900/5">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
+    <!-- Expertise Section -->
+    <section id="capabilities" class="bg-brand-light py-32 border-b border-emerald-900/5 w-full">
+        <div class="w-full px-6 md:px-12">
+            <div class="text-center mb-24">
                 <h2 class="text-xs uppercase tracking-[0.3em] text-brand-hover font-bold mb-3">Expertise</h2>
-                <p class="text-3xl font-extrabold tracking-tight text-brand-dark">Engineering Services</p>
+                <p class="text-4xl font-extrabold tracking-tight text-brand-dark">Engineering Services</p>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-                <div class="bg-white p-8 lg:p-10 rounded-xl border border-gray-200/80 shadow-sm hover:shadow-md transition">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-7xl mx-auto">
+                <div class="bg-white p-8 lg:p-12 rounded-xl border border-gray-200/80 shadow-sm hover:shadow-md transition">
                     <h3 class="text-2xl font-bold text-brand-dark mb-4">Expert Third-Party Review & Auditing</h3>
                     <p class="text-emerald-900/70 leading-relaxed mb-6">
-                        We possess the elite technical depth required to act as the ultimate engineering authority—vetting, validating, and auditing complex power system models to isolate critical discrepancies and eliminate blind spots[cite: 1].
+                        We possess the elite technical depth required to act as the ultimate engineering authority—vetting, validating, and auditing complex power system models to isolate critical discrepancies and eliminate blind spots.
                     </p>
                     <ul class="space-y-3 border-t border-gray-100 pt-6">
                         <li class="flex items-start text-sm text-brand-dark font-medium">
-                            <span class="text-brand-accent font-bold mr-3">•</span> Comprehensive Arc Flash & Power System Study Auditing[cite: 1]
+                            <span class="text-brand-accent font-bold mr-3">•</span> Comprehensive Arc Flash & Power System Study Auditing
                         </li>
                         <li class="flex items-start text-sm text-brand-dark font-medium">
-                            <span class="text-brand-accent font-bold mr-3">•</span> Forensic-Grade Model Verification & Discrepancy Identification[cite: 1]
+                            <span class="text-brand-accent font-bold mr-3">•</span> Forensic-Grade Model Verification & Discrepancy Identification
                         </li>
                         <li class="flex items-start text-sm text-brand-dark font-medium">
-                            <span class="text-brand-accent font-bold mr-3">•</span> Peer Reviews, Quality Control Shielding, & Professional Witness[cite: 1]
+                            <span class="text-brand-accent font-bold mr-3">•</span> Peer Reviews, Quality Control Shielding, & Professional Witness
                         </li>
                         <li class="flex items-start text-sm text-brand-dark font-medium">
-                            <span class="text-brand-accent font-bold mr-3">•</span> Strict Compliance Auditing (NFPA 70E / IEEE / NEC)[cite: 1]
+                            <span class="text-brand-accent font-bold mr-3">•</span> Strict Compliance Auditing (NFPA 70E / IEEE / NEC)
                         </li>
                     </ul>
                 </div>
 
-                <div class="bg-white p-8 lg:p-10 rounded-xl border border-gray-200/80 shadow-sm hover:shadow-md transition">
+                <div class="bg-white p-8 lg:p-12 rounded-xl border border-gray-200/80 shadow-sm hover:shadow-md transition">
                     <h3 class="text-2xl font-bold text-brand-dark mb-4">Advanced Modeling & Analysis</h3>
                     <p class="text-emerald-900/70 leading-relaxed mb-6">
-                        We model, analyze, and optimize high-consequence electrical infrastructure using an institutional standard of engineering rigor that actively protects personnel and secures system uptime[cite: 1].
+                        We model, analyze, and optimize high-consequence electrical infrastructure using an institutional standard of engineering rigor that actively protects personnel and secures system uptime.
                     </p>
                     <ul class="space-y-3 border-t border-gray-100 pt-6">
                         <li class="flex items-start text-sm text-brand-dark font-medium">
-                            <span class="text-brand-accent font-bold mr-3">•</span> IEEE 1584 Arc Flash Hazard Analysis[cite: 1]
+                            <span class="text-brand-accent font-bold mr-3">•</span> IEEE 1584 Arc Flash Hazard Analysis
                         </li>
                         <li class="flex items-start text-sm text-brand-dark font-medium">
-                            <span class="text-brand-accent font-bold mr-3">•</span> Protective Device Coordination & Nuisance Tripping Alleviation[cite: 1]
+                            <span class="text-brand-accent font-bold mr-3">•</span> Protective Device Coordination & Nuisance Tripping Alleviation
                         </li>
                         <li class="flex items-start text-sm text-brand-dark font-medium">
-                            <span class="text-brand-accent font-bold mr-3">•</span> Rigorous Short Circuit Calculations & Equipment Duty Evaluation[cite: 1]
+                            <span class="text-brand-accent font-bold mr-3">•</span> Rigorous Short Circuit Calculations & Equipment Duty Evaluation
                         </li>
                         <li class="flex items-start text-sm text-brand-dark font-medium">
-                            <span class="text-brand-accent font-bold mr-3">•</span> Full System Optimization, Arc Flash Mitigation, & Equipment Labeling[cite: 1]
+                            <span class="text-brand-accent font-bold mr-3">•</span> Full System Optimization, Arc Flash Mitigation, & Equipment Labeling
                         </li>
                     </ul>
                 </div>
@@ -129,36 +135,38 @@
         </div>
     </section>
 
-    <section id="trust" class="bg-white py-24 border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-16">
-                <p class="text-3xl font-extrabold tracking-tight text-brand-dark">Why Businesses Partner with Fosco Engineering</p>
+    <!-- Why Us Section -->
+    <section id="trust" class="bg-white py-32 border-b border-gray-100 w-full">
+        <div class="w-full px-6 md:px-12 max-w-7xl mx-auto">
+            <div class="mb-24">
+                <p class="text-4xl font-extrabold tracking-tight text-brand-dark">Why Businesses Partner with Fosco Engineering</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-10">
-                <div class="space-y-3">
-                    <h4 class="text-lg font-bold text-brand-dark border-b border-emerald-100 pb-2">The Expert’s Expert</h4>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="space-y-4">
+                    <h4 class="text-xl font-bold text-brand-dark border-b border-emerald-100 pb-2">The Expert’s Expert</h4>
                     <p class="text-sm text-emerald-900/70 leading-relaxed">
-                        We don't just run standard software scripts; we audit them. Our rare technical depth allows us to perform meticulous peer reviews that catch underlying model gaps, protecting your facilities from catastrophic oversights[cite: 1].
+                        We don't just run standard software scripts; we audit them. Our rare technical depth allows us to perform meticulous peer reviews that catch underlying model gaps, protecting your facilities from catastrophic oversights.
                     </p>
                 </div>
-                <div class="space-y-3">
-                    <h4 class="text-lg font-bold text-brand-dark border-b border-emerald-100 pb-2">Direct Licensed P.E. Mastery</h4>
+                <div class="space-y-4">
+                    <h4 class="text-xl font-bold text-brand-dark border-b border-emerald-100 pb-2">Direct Licensed P.E. Mastery</h4>
                     <p class="text-sm text-emerald-900/70 leading-relaxed">
-                        High-powered power systems demand senior-level execution. Your analysis will never be handed down to uncredentialed junior technicians. Every single model, evaluation, and final seal is executed directly by a licensed Professional Engineer[cite: 1].
+                        High-powered power systems demand senior-level execution. Your analysis will never be handed down to uncredentialed junior technicians. Every single model, evaluation, and final seal is executed directly by a licensed Professional Engineer.
                     </p>
                 </div>
-                <div class="space-y-3">
-                    <h4 class="text-lg font-bold text-brand-dark border-b border-emerald-100 pb-2">Uncompromised System Safety</h4>
+                <div class="space-y-4">
+                    <h4 class="text-xl font-bold text-brand-dark border-b border-emerald-100 pb-2">Uncompromised System Safety</h4>
                     <p class="text-sm text-emerald-900/70 leading-relaxed">
-                        Our ultimate mission is to improve safety and operational reliability throughout the electrical industry[cite: 1]. By matching severe engineering rigor with clear, executable deliverables, we ensure clients can move forward with absolute peace of mind[cite: 1].
+                        Our ultimate mission is to improve safety and operational reliability throughout the electrical industry. By matching severe engineering rigor with clear, executable deliverables, we ensure clients can move forward with absolute peace of mind.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="intake" class="bg-brand-light py-24 border-b border-emerald-900/5">
+    <!-- Consultation Section -->
+    <section id="intake" class="bg-brand-light py-32 border-b border-emerald-900/5 w-full">
         <div class="max-w-4xl mx-auto px-6">
             <div class="bg-white border border-gray-200 shadow-xl rounded-xl p-8 md:p-12">
                 <div class="text-center mb-10">
@@ -209,14 +217,14 @@
         </div>
     </section>
 
-    <footer class="bg-brand-dark text-emerald-100/60 text-xs py-16">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+    <footer class="bg-brand-dark text-emerald-100/60 text-xs py-16 w-full">
+        <div class="w-full px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
                 <p class="font-extrabold text-white tracking-widest text-base mb-1">FOSCO ENGINEERING</p>
                 <p>&copy; 2026 Fosco Engineering LLC. All rights reserved.</p>
             </div>
             <div class="text-center md:text-right text-[11px] text-emerald-100/40 font-medium max-w-md">
-                All technical deliverables are fully engineered, certified, and stamped directly by a licensed Professional Engineer[cite: 1].
+                All technical deliverables are fully engineered, certified, and stamped directly by a licensed Professional Engineer.
             </div>
         </div>
     </footer>
